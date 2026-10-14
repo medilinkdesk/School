@@ -1,0 +1,509 @@
+{
+  "settings": {
+    "schoolName": "ST. XAVIER'S INTERNATIONAL ACADEMY",
+    "shortName": "SXIA",
+    "tagline": "Excellence in Academics, Character & Global Leadership",
+    "affiliation": "CBSE Affiliation No: 2130498 • School Code: 65412",
+    "address": "Sector 14, Knowledge Park III, Institutional Area, New Delhi - 110075",
+    "phone": "+91 11 2658 9400, +91 98765 43210",
+    "email": "admissions@stxaviersacademy.edu.in",
+    "website": "www.stxaviersacademy.edu.in",
+    "academicYear": "2026-2027",
+    "validUpto": "31 March 2027",
+    "principalName": "Dr. Arvind K. Sharma",
+    "principalQualification": "M.Sc., M.Ed., Ph.D.",
+    "logo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%22120%22%20height%3D%22120%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22shield%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23312e81%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22gold%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23fbbf24%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2256%22%20fill%3D%22url(%23shield)%22%20stroke%3D%22url(%23gold)%22%20stroke-width%3D%224%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2260%22%20cy%3D%2260%22%20r%3D%2248%22%20fill%3D%22none%22%20stroke%3D%22%23fbbf24%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%223%2C3%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%2036%20L60%2024%20L85%2036%20L85%2062%20C85%2080%2060%2094%2060%2094%20C60%2094%2035%2080%2035%2062%20Z%22%20fill%3D%22%231e40af%22%20stroke%3D%22url(%23gold)%22%20stroke-width%3D%222.5%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M44%2058%20Q52%2054%2060%2058%20Q68%2054%2076%2058%20L76%2072%20Q68%2068%2060%2072%20Q52%2068%2044%2072%20Z%22%20fill%3D%22%23ffffff%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M60%2034%20C64%2040%2065%2044%2060%2049%20C55%2044%2056%2040%2060%2034%20Z%22%20fill%3D%22%23fbbf24%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2260%22%20y%3D%22108%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fde68a%22%20font-family%3D%22serif%22%20font-weight%3D%22bold%22%20font-size%3D%228.5%22%20letter-spacing%3D%221.5%22%3EESTD%201998%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E",
+    "principalSignature": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20220%2060%22%20width%3D%22220%22%20height%3D%2260%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18%2042%20C28%2015%2C%2042%2018%2C%2036%2040%20C34%2046%2C%2052%2022%2C%2064%2028%20C72%2032%2C%2068%2042%2C%2078%2036%20C88%2030%2C%2096%2018%2C%20105%2034%20C112%2045%2C%20122%2025%2C%20135%2030%20C148%2035%2C%20162%2020%2C%20185%2026%22%20stroke%3D%22%231e3a8a%22%20stroke-width%3D%222.6%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M45%2048%20L175%2044%22%20stroke%3D%22%231e3a8a%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.7%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22165%22%20cy%3D%2236%22%20r%3D%221.8%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%3C%2Fsvg%3E",
+    "defaultCardTemplate": "royal",
+    "cardTerms": [
+      "This identity card is non-transferable and remains the property of St. Xavier's International Academy.",
+      "Students & staff must wear this card visibly inside the school premises and school transport.",
+      "In case of loss or damage, report immediately to the Administrative Office (Duplicate fee ₹150)."
+    ]
+  },
+  "students": [
+    {
+      "id": "STU-1001",
+      "admissionNo": "ADM/2026/001",
+      "rollNo": "1001",
+      "name": "Aarav Vikramaditya Verma",
+      "className": "10",
+      "section": "A",
+      "stream": "Science / STEM",
+      "gender": "Male",
+      "dob": "2011-04-14",
+      "bloodGroup": "O+",
+      "fatherName": "Rajeshwar Verma",
+      "motherName": "Sunita Verma",
+      "phone": "+91 98112 23344",
+      "emergencyPhone": "+91 98112 99887",
+      "email": "aarav.verma@student.sxia.edu.in",
+      "address": "B-42, Green Park Extension, South Delhi - 110016",
+      "house": "Phoenix Red",
+      "busRoute": "Route 04 - Green Park / Hauz Khas",
+      "admissionDate": "2020-04-05",
+      "status": "Active",
+      "medicalNotes": "None",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232563eb%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231d4ed8%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EAV%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1002",
+      "admissionNo": "ADM/2026/002",
+      "rollNo": "1002",
+      "name": "Ananya Priyadarshini Nair",
+      "className": "10",
+      "section": "A",
+      "stream": "Science / STEM",
+      "gender": "Female",
+      "dob": "2011-08-22",
+      "bloodGroup": "A+",
+      "fatherName": "Krishnakumar Nair",
+      "motherName": "Meenakshi Nair",
+      "phone": "+91 98710 55432",
+      "emergencyPhone": "+91 98710 11223",
+      "email": "ananya.nair@student.sxia.edu.in",
+      "address": "Flat 804, Palm Grove Towers, Vasant Kunj, New Delhi - 110070",
+      "house": "Titan Blue",
+      "busRoute": "Route 02 - Vasant Kunj Sector B",
+      "admissionDate": "2020-04-08",
+      "status": "Active",
+      "medicalNotes": "Mild dust allergy",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237c3aed%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%235b21b6%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EAN%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1003",
+      "admissionNo": "ADM/2026/003",
+      "rollNo": "1003",
+      "name": "Rohan Deshmukh",
+      "className": "10",
+      "section": "B",
+      "stream": "Science / STEM",
+      "gender": "Male",
+      "dob": "2011-01-19",
+      "bloodGroup": "B+",
+      "fatherName": "Milind Deshmukh",
+      "motherName": "Kavita Deshmukh",
+      "phone": "+91 99104 77889",
+      "emergencyPhone": "+91 99104 00112",
+      "email": "rohan.deshmukh@student.sxia.edu.in",
+      "address": "C-118, Defence Colony, New Delhi - 110024",
+      "house": "Emerald Green",
+      "busRoute": "Route 07 - Lajpat Nagar / Def Col",
+      "admissionDate": "2021-03-29",
+      "status": "Active",
+      "medicalNotes": "None",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23059669%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23047857%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3ERD%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1004",
+      "admissionNo": "ADM/2026/004",
+      "rollNo": "1201",
+      "name": "Ishita Sengupta",
+      "className": "12",
+      "section": "A",
+      "stream": "PCM + Computer Science",
+      "gender": "Female",
+      "dob": "2009-11-03",
+      "bloodGroup": "AB+",
+      "fatherName": "Subrata Sengupta",
+      "motherName": "Rituparna Sengupta",
+      "phone": "+91 98180 66554",
+      "emergencyPhone": "+91 98180 33221",
+      "email": "ishita.sengupta@student.sxia.edu.in",
+      "address": "K-19, Chittaranjan Park, New Delhi - 110019",
+      "house": "Solar Gold",
+      "busRoute": "Route 05 - CR Park / Greater Kailash",
+      "admissionDate": "2018-04-02",
+      "status": "Active",
+      "medicalNotes": "Spectacles (-1.5D)",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23b45309%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EIS%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1005",
+      "admissionNo": "ADM/2026/005",
+      "rollNo": "1202",
+      "name": "Kabir Singhania",
+      "className": "12",
+      "section": "A",
+      "stream": "Commerce + Mathematics",
+      "gender": "Male",
+      "dob": "2009-06-28",
+      "bloodGroup": "O-",
+      "fatherName": "Harshvardhan Singhania",
+      "motherName": "Nandini Singhania",
+      "phone": "+91 98101 44556",
+      "emergencyPhone": "+91 98101 88990",
+      "email": "kabir.singhania@student.sxia.edu.in",
+      "address": "Villa 12, Shanti Niketan, New Delhi - 110021",
+      "house": "Phoenix Red",
+      "busRoute": "Self / Chauffeur Drop",
+      "admissionDate": "2018-04-10",
+      "status": "Active",
+      "medicalNotes": "Rare Blood Group (O Negative)",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23e11d48%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23be123c%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EKS%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1006",
+      "admissionNo": "ADM/2026/006",
+      "rollNo": "0901",
+      "name": "Zoya Fatima Khan",
+      "className": "9",
+      "section": "A",
+      "stream": "General Foundation",
+      "gender": "Female",
+      "dob": "2012-02-17",
+      "bloodGroup": "B+",
+      "fatherName": "Tariq Ahmed Khan",
+      "motherName": "Farah Khan",
+      "phone": "+91 98992 34567",
+      "emergencyPhone": "+91 98992 76543",
+      "email": "zoya.khan@student.sxia.edu.in",
+      "address": "A-56, Friends Colony West, New Delhi - 110065",
+      "house": "Titan Blue",
+      "busRoute": "Route 09 - New Friends Colony",
+      "admissionDate": "2022-04-04",
+      "status": "Active",
+      "medicalNotes": "None",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230284c7%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230369a1%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EZK%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1007",
+      "admissionNo": "ADM/2026/007",
+      "rollNo": "0801",
+      "name": "Vivaan Malhotra",
+      "className": "8",
+      "section": "A",
+      "stream": "Middle Wing",
+      "gender": "Male",
+      "dob": "2013-09-09",
+      "bloodGroup": "A+",
+      "fatherName": "Siddharth Malhotra",
+      "motherName": "Pooja Malhotra",
+      "phone": "+91 98115 67890",
+      "emergencyPhone": "+91 98115 09876",
+      "email": "vivaan.malhotra@student.sxia.edu.in",
+      "address": "D-204, Saket Residential Enclave, New Delhi - 110017",
+      "house": "Emerald Green",
+      "busRoute": "Route 03 - Saket / Malviya Nagar",
+      "admissionDate": "2023-04-01",
+      "status": "Active",
+      "medicalNotes": "Peanut allergy",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230d9488%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f766e%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EVM%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "STU-1008",
+      "admissionNo": "ADM/2026/008",
+      "rollNo": "0601",
+      "name": "Meera Subramanian",
+      "className": "6",
+      "section": "B",
+      "stream": "Middle Wing",
+      "gender": "Female",
+      "dob": "2015-05-25",
+      "bloodGroup": "O+",
+      "fatherName": "Venkatesh Subramanian",
+      "motherName": "Lakshmi Subramanian",
+      "phone": "+91 97172 88334",
+      "emergencyPhone": "+91 97172 44112",
+      "email": "meera.subramanian@student.sxia.edu.in",
+      "address": "R-88, R.K. Puram Sector 9, New Delhi - 110022",
+      "house": "Solar Gold",
+      "busRoute": "Route 01 - RK Puram / Moti Bagh",
+      "admissionDate": "2024-04-03",
+      "status": "Active",
+      "medicalNotes": "None",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239333ea%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%236b21a8%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%23f8fafc%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23dc2626%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EMS%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    }
+  ],
+  "staff": [
+    {
+      "id": "EMP-101",
+      "employeeCode": "FAC/2026/101",
+      "name": "Dr. Arvind K. Sharma",
+      "designation": "Principal & Director",
+      "department": "Administration",
+      "qualification": "M.Sc. (Physics), M.Ed., Ph.D.",
+      "experience": "22 Years",
+      "gender": "Male",
+      "dob": "1974-08-12",
+      "bloodGroup": "O+",
+      "phone": "+91 98100 11100",
+      "emergencyPhone": "+91 98100 22200",
+      "email": "principal@stxaviersacademy.edu.in",
+      "address": "Principal Bungalow, Sector 14 Institutional Campus, New Delhi",
+      "joiningDate": "2012-06-01",
+      "salary": 145000,
+      "status": "Active",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EAS%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "EMP-102",
+      "employeeCode": "FAC/2026/102",
+      "name": "Prof. Radhika Iyer",
+      "designation": "HOD - Mathematics",
+      "department": "Mathematics & Olympiad",
+      "qualification": "M.Sc. (Mathematics), B.Ed., CSIR-NET",
+      "experience": "14 Years",
+      "gender": "Female",
+      "dob": "1983-03-19",
+      "bloodGroup": "A+",
+      "phone": "+91 98188 33445",
+      "emergencyPhone": "+91 98188 99001",
+      "email": "radhika.iyer@stxaviersacademy.edu.in",
+      "address": "402, Neelkanth Apartments, Dwarka Sector 10, New Delhi",
+      "joiningDate": "2016-04-15",
+      "salary": 88000,
+      "status": "Active",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236d28d9%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234c1d95%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3ERI%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "EMP-103",
+      "employeeCode": "FAC/2026/103",
+      "name": "Mr. Vikramjeet Singh Gill",
+      "designation": "Senior PGT - Physics & Robotics",
+      "department": "Science & STEM Lab",
+      "qualification": "M.Tech (Instrumentation), B.Ed.",
+      "experience": "11 Years",
+      "gender": "Male",
+      "dob": "1986-11-24",
+      "bloodGroup": "B+",
+      "phone": "+91 98733 22110",
+      "emergencyPhone": "+91 98733 55667",
+      "email": "vikramjeet.gill@stxaviersacademy.edu.in",
+      "address": "J-14, Rajouri Garden, New Delhi - 110027",
+      "joiningDate": "2018-07-01",
+      "salary": 82000,
+      "status": "Active",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230f766e%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23115e59%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3EVG%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "EMP-104",
+      "employeeCode": "FAC/2026/104",
+      "name": "Ms. Clara D'Souza",
+      "designation": "Senior TGT - English Literature",
+      "department": "Humanities & Languages",
+      "qualification": "M.A. (English Literature), B.Ed., CELTA",
+      "experience": "9 Years",
+      "gender": "Female",
+      "dob": "1989-05-07",
+      "bloodGroup": "AB+",
+      "phone": "+91 99581 44223",
+      "emergencyPhone": "+91 99581 88776",
+      "email": "clara.dsouza@stxaviersacademy.edu.in",
+      "address": "18-B, Connaught Circus Lane, New Delhi - 110001",
+      "joiningDate": "2019-04-10",
+      "salary": 74000,
+      "status": "Active",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23be123c%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23881337%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M70%20125%20C65%2065%2095%2048%20120%2048%20C145%2048%20175%2065%20170%20125%20C175%20155%20178%20180%20165%20192%20C160%20165%20162%20135%20160%20110%20C145%2080%2095%2080%2080%20110%20C78%20135%2080%20165%2075%20192%20C62%20180%2065%20155%2070%20125%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3ECD%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    },
+    {
+      "id": "EMP-105",
+      "employeeCode": "FAC/2026/105",
+      "name": "Mr. Saurabh Chatterjee",
+      "designation": "PGT - Computer Science & AI",
+      "department": "Information Technology",
+      "qualification": "MCA, B.Tech (CSE)",
+      "experience": "8 Years",
+      "gender": "Male",
+      "dob": "1991-09-15",
+      "bloodGroup": "O+",
+      "phone": "+91 98119 66778",
+      "emergencyPhone": "+91 98119 33445",
+      "email": "saurabh.chatterjee@stxaviersacademy.edu.in",
+      "address": "H-92, Kalkaji Extension, New Delhi - 110019",
+      "joiningDate": "2020-08-12",
+      "salary": 78000,
+      "status": "Active",
+      "photo": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20240%20280%22%20width%3D%22240%22%20height%3D%22280%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231d4ed8%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Crect%20width%3D%22240%22%20height%3D%22280%22%20fill%3D%22url(%23bg)%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22120%22%20cy%3D%2260%22%20r%3D%22110%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.06%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20280%20C35%20205%2075%20190%20120%20190%20C165%20190%20205%20205%20205%20280%20Z%22%20fill%3D%22%230f172a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%2295%2C190%20120%2C245%20145%2C190%22%20fill%3D%22%231e3a8a%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22114%2C205%20126%2C205%20130%2C275%20120%2C285%20110%2C275%22%20fill%3D%22%23d97706%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22103%22%20y%3D%22155%22%20width%3D%2234%22%20height%3D%2242%22%20rx%3D%2212%22%20fill%3D%22%23f6c492%22%20%2F%3E%0A%20%20%20%20%3Cellipse%20cx%3D%22120%22%20cy%3D%22115%22%20rx%3D%2246%22%20ry%3D%2254%22%20fill%3D%22%23fbd3a7%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M74%20108%20C72%2064%2095%2052%20120%2052%20C148%2052%20168%2066%20166%20108%20C158%2086%20142%2078%20120%2078%20C98%2078%2082%2086%2074%20108%20Z%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22102%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22138%22%20cy%3D%22114%22%20r%3D%224.5%22%20fill%3D%22%231e293b%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M92%20103%20Q102%2098%20111%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M129%20103%20Q138%2098%20148%20103%22%20stroke%3D%22%23334155%22%20stroke-width%3D%222.5%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M106%20140%20Q120%20151%20134%20140%22%20stroke%3D%22%23b45309%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%2238%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.2%22%20%2F%3E%0A%20%20%20%20%3Ctext%20x%3D%2233%22%20y%3D%2230%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2212%22%3ESC%3C%2Ftext%3E%0A%20%20%3C%2Fsvg%3E"
+    }
+  ],
+  "attendance": [
+    {
+      "date": "2026-09-28",
+      "records": {
+        "STU-1001": {
+          "status": "Present",
+          "remarks": "On time"
+        },
+        "STU-1002": {
+          "status": "Present",
+          "remarks": "On time"
+        },
+        "STU-1003": {
+          "status": "Present",
+          "remarks": "On time"
+        },
+        "STU-1004": {
+          "status": "Present",
+          "remarks": "Science Olympiad Prep"
+        },
+        "STU-1005": {
+          "status": "Late",
+          "remarks": "Traffic delay (10 mins)"
+        },
+        "STU-1006": {
+          "status": "Present",
+          "remarks": "On time"
+        },
+        "STU-1007": {
+          "status": "Absent",
+          "remarks": "Medical leave application submitted"
+        },
+        "STU-1008": {
+          "status": "Present",
+          "remarks": "On time"
+        }
+      }
+    }
+  ],
+  "exams": [
+    {
+      "id": "EXM-01",
+      "studentId": "STU-1001",
+      "examTerm": "Mid-Term Examination 2026-27",
+      "attendanceDays": "96 / 100",
+      "coScholastic": {
+        "discipline": "A+",
+        "workEducation": "A+",
+        "artEducation": "A",
+        "healthPhysical": "A+"
+      },
+      "teacherRemarks": "Aarav demonstrates exceptional analytical ability in Mathematics and Physics.",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "code": "041",
+          "maxMarks": 100,
+          "theory": 76,
+          "practical": 20,
+          "obtained": 96
+        },
+        {
+          "name": "Science & Technology",
+          "code": "086",
+          "maxMarks": 100,
+          "theory": 74,
+          "practical": 20,
+          "obtained": 94
+        },
+        {
+          "name": "English Language & Lit.",
+          "code": "184",
+          "maxMarks": 100,
+          "theory": 71,
+          "practical": 19,
+          "obtained": 90
+        },
+        {
+          "name": "Social Science",
+          "code": "087",
+          "maxMarks": 100,
+          "theory": 72,
+          "practical": 20,
+          "obtained": 92
+        },
+        {
+          "name": "Artificial Intelligence / IT",
+          "code": "417",
+          "maxMarks": 100,
+          "theory": 49,
+          "practical": 50,
+          "obtained": 99
+        }
+      ]
+    }
+  ],
+  "fees": [
+    {
+      "id": "FEE-1001",
+      "studentId": "STU-1001",
+      "academicYear": "2026-2027",
+      "totalAnnualFee": 84000,
+      "discount": 4000,
+      "netPayable": 80000,
+      "paidAmount": 80000,
+      "breakdown": {
+        "tuitionFee": 54000,
+        "labAndSmartClass": 12000,
+        "transportFee": 10000,
+        "libraryAndSports": 4000
+      },
+      "payments": [
+        {
+          "receiptNo": "RCP-2026-1001",
+          "date": "2026-04-10",
+          "amount": 80000,
+          "mode": "UPI / NEFT",
+          "transactionRef": "UTR6291048291",
+          "installment": "Full Annual Fee",
+          "collectedBy": "Accounts Desk 01"
+        }
+      ]
+    }
+  ],
+  "timetable": [
+    {
+      "className": "10",
+      "section": "A",
+      "roomNo": "Block B • Room 204",
+      "classTeacher": "Prof. Radhika Iyer",
+      "schedule": {
+        "Monday": [
+          {
+            "period": 1,
+            "time": "08:00 - 08:45",
+            "subject": "Mathematics",
+            "teacher": "Prof. Radhika Iyer",
+            "type": "Theory"
+          },
+          {
+            "period": 2,
+            "time": "08:45 - 09:30",
+            "subject": "Physics",
+            "teacher": "Mr. Vikramjeet Gill",
+            "type": "Theory"
+          },
+          {
+            "period": 3,
+            "time": "09:30 - 10:15",
+            "subject": "English Lit.",
+            "teacher": "Ms. Clara D'Souza",
+            "type": "Theory"
+          },
+          {
+            "period": 4,
+            "time": "10:35 - 11:20",
+            "subject": "AI & Python Lab",
+            "teacher": "Mr. Saurabh Chatterjee",
+            "type": "Practical"
+          },
+          {
+            "period": 5,
+            "time": "11:20 - 12:05",
+            "subject": "Social Science",
+            "teacher": "Faculty Pool",
+            "type": "Theory"
+          },
+          {
+            "period": 6,
+            "time": "12:05 - 12:50",
+            "subject": "Chemistry",
+            "teacher": "Mr. Vikramjeet Gill",
+            "type": "Lab"
+          }
+        ]
+      }
+    }
+  ],
+  "notices": [
+    {
+      "id": "NOT-01",
+      "title": "Distribution of Smart RFID & QR Identity Cards (Session 2026-27)",
+      "category": "Administration",
+      "date": "2026-09-28",
+      "priority": "High",
+      "audience": "All Students & Faculty",
+      "content": "Updated PVC CR80 Identity Cards with QR verification and emergency contact details are being issued this week."
+    }
+  ]
+}
