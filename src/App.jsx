@@ -7,6 +7,7 @@ import AttendanceModule from './components/AttendanceModule';
 import ExamReportModule from './components/ExamReportModule';
 import FeeReceiptModule from './components/FeeReceiptModule';
 import TimetableNoticesModule from './components/TimetableNoticesModule';
+import { initialSeedData } from './data/seedData';
 import {
   LayoutDashboard,
   CreditCard,
@@ -18,157 +19,382 @@ import {
   Clock,
   RefreshCw,
   ShieldCheck,
+  Globe,
 } from 'lucide-react';
+
+const STORAGE_KEY = 'edusphere_school_db';
 
 export default function App() {
   const [db, setDb] = useState(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('dashboard');
   const [studioTargetPerson, setStudioTargetPerson] = useState(null);
+  const [isCloudMode, setIsCloudMode] = useState(false);
+
+  const saveToStorageAndState = (newDb) => {
+    setDb(newDb);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(newDb));
+    } catch (e) {
+      console.warn('LocalStorage save error:', e);
+    }
+  };
 
   const fetchBootstrap = async () => {
     setLoading(true);
+    let loadedFromApi = false;
     try {
       const res = await fetch('/api/bootstrap');
-      const data = await res.json();
-      setDb(data);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.students) {
+          saveToStorageAndState(data);
+          loadedFromApi = true;
+        }
+      }
     } catch (err) {
-      console.error('Failed to load school database:', err);
-    } finally {
-      setLoading(false);
+      // Backend not running (e.g. GitHub Pages static host)
     }
+
+    if (!loadedFromApi) {
+      setIsCloudMode(true);
+      try {
+        const cached = localStorage.getItem(STORAGE_KEY);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (parsed && parsed.students) {
+            setDb(parsed);
+            setLoading(false);
+            return;
+          }
+        }
+      } catch (err) {
+        console.error('Failed to parse cached local data:', err);
+      }
+      // Fallback to rich seed data
+      saveToStorageAndState(JSON.parse(JSON.stringify(initialSeedData)));
+    }
+    setLoading(false);
   };
 
   useEffect(() => {
     fetchBootstrap();
   }, []);
 
+  // --- MUTATION HANDLERS (Works both with Backend API and Client-Side LocalStorage on GitHub Pages) ---
+
   const handleCreateStudent = async (payload) => {
-    const res = await fetch('/api/students', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    const data = await res.json();
-    if (data.db) setDb(data.db);
-    else fetchBootstrap();
+    const nextNum = (db.students?.length || 0) + 1001;
+    const newStudent = {
+      id: payload.id || `STU-${Date.now().toString().slice(-4)}`,
+      admissionNo: payload.admissionNo || `ADM/2026/${String((db.students?.length || 0) + 1).padStart(3, '0')}`,
+      rollNo: payload.rollNo || String(nextNum),
+      name: payload.name || 'New Student',
+      className: payload.className || '10',
+      section: payload.section || 'A',
+      stream: payload.stream || 'General',
+      gender: payload.gender || 'Male',
+      dob: payload.dob || '2011-01-01',
+      bloodGroup: payload.bloodGroup || 'O+',
+      fatherName: payload.fatherName || '',
+      motherName: payload.motherName || '',
+      phone: payload.phone || '',
+      emergencyPhone: payload.emergencyPhone || payload.phone || '',
+      email: payload.email || '',
+      address: payload.address || '',
+      house: payload.house || 'Phoenix Red',
+      busRoute: payload.busRoute || 'Self / Parent Drop',
+      admissionDate: payload.admissionDate || new Date().toISOString().split('T')[0],
+      status: payload.status || 'Active',
+      medicalNotes: payload.medicalNotes || 'None',
+      photo: payload.photo || '',
+      ...payload,
+    };
+
+    const nextStudents = [newStudent, ...(db.students || [])];
+    const nextFees = [...(db.fees || [])];
+    if (!nextFees.some((f) => f.studentId === newStudent.id)) {
+      nextFees.push({
+        id: `FEE-${Date.now().toString().slice(-4)}`,
+        studentId: newStudent.id,
+        academicYear: db.settings?.academicYear || '2026-2027',
+        totalAnnualFee: 84000,
+        discount: 0,
+        netPayable: 84000,
+        paidAmount: 0,
+        breakdown: {
+          tuitionFee: 56000,
+          labAndSmartClass: 12000,
+          transportFee: 12000,
+          libraryAndSports: 4000,
+        },
+        payments: [],
+      });
+    }
+
+    const updatedDb = { ...db, students: nextStudents, fees: nextFees };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/students', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newStudent),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleUpdateStudent = async (id, payload) => {
-    const res = await fetch(`/api/students/${id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    const updated = await res.json();
-    setDb((prev) => ({
-      ...prev,
-      students: prev.students.map((s) => (s.id === id ? updated : s)),
-    }));
+    const updatedStudents = db.students.map((s) =>
+      s.id === id ? { ...s, ...payload } : s
+    );
+    const updatedDb = { ...db, students: updatedStudents };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/students/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleDeleteStudent = async (id) => {
-    await fetch(`/api/students/${id}`, { method: 'DELETE' });
-    setDb((prev) => ({
-      ...prev,
-      students: prev.students.filter((s) => s.id !== id),
-    }));
+    const updatedStudents = db.students.filter((s) => s.id !== id);
+    const updatedDb = { ...db, students: updatedStudents };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/students/${id}`, { method: 'DELETE' }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleCreateStaff = async (payload) => {
-    const res = await fetch('/api/staff', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    const created = await res.json();
-    setDb((prev) => ({ ...prev, staff: [created, ...prev.staff] }));
+    const newStaff = {
+      id: payload.id || `EMP-${Date.now().toString().slice(-4)}`,
+      employeeCode: payload.employeeCode || `FAC/2026/${101 + (db.staff?.length || 0)}`,
+      name: payload.name || 'New Faculty',
+      designation: payload.designation || 'TGT Teacher',
+      department: payload.department || 'Academics',
+      qualification: payload.qualification || 'M.Sc., B.Ed.',
+      experience: payload.experience || '5 Years',
+      gender: payload.gender || 'Male',
+      dob: payload.dob || '1988-01-01',
+      bloodGroup: payload.bloodGroup || 'O+',
+      phone: payload.phone || '',
+      emergencyPhone: payload.emergencyPhone || payload.phone || '',
+      email: payload.email || '',
+      address: payload.address || '',
+      joiningDate: payload.joiningDate || new Date().toISOString().split('T')[0],
+      salary: Number(payload.salary) || 65000,
+      status: payload.status || 'Active',
+      photo: payload.photo || '',
+      ...payload,
+    };
+    const updatedDb = { ...db, staff: [newStaff, ...(db.staff || [])] };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/staff', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newStaff),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleUpdateStaff = async (id, payload) => {
-    const res = await fetch(`/api/staff/${id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    const updated = await res.json();
-    setDb((prev) => ({
-      ...prev,
-      staff: prev.staff.map((s) => (s.id === id ? updated : s)),
-    }));
+    const updatedStaff = db.staff.map((s) =>
+      s.id === id ? { ...s, ...payload } : s
+    );
+    const updatedDb = { ...db, staff: updatedStaff };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/staff/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleDeleteStaff = async (id) => {
-    await fetch(`/api/staff/${id}`, { method: 'DELETE' });
-    setDb((prev) => ({
-      ...prev,
-      staff: prev.staff.filter((s) => s.id !== id),
-    }));
+    const updatedStaff = db.staff.filter((s) => s.id !== id);
+    const updatedDb = { ...db, staff: updatedStaff };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/staff/${id}`, { method: 'DELETE' }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleSaveAttendance = async (date, records) => {
-    const res = await fetch('/api/attendance', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ date, records }),
-    });
-    const updatedAttendance = await res.json();
-    setDb((prev) => ({ ...prev, attendance: updatedAttendance }));
+    const existingIdx = (db.attendance || []).findIndex((a) => a.date === date);
+    let nextAttendance = [...(db.attendance || [])];
+    if (existingIdx >= 0) {
+      nextAttendance[existingIdx] = {
+        ...nextAttendance[existingIdx],
+        records: { ...nextAttendance[existingIdx].records, ...records },
+      };
+    } else {
+      nextAttendance.unshift({ date, records });
+    }
+    const updatedDb = { ...db, attendance: nextAttendance };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/attendance', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ date, records }),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleSaveExam = async (examPayload) => {
-    const res = await fetch('/api/exams', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(examPayload),
-    });
-    const updatedExams = await res.json();
-    setDb((prev) => ({ ...prev, exams: updatedExams }));
+    const existingIdx = (db.exams || []).findIndex(
+      (e) =>
+        e.studentId === examPayload.studentId &&
+        e.examTerm === examPayload.examTerm
+    );
+    let nextExams = [...(db.exams || [])];
+    if (existingIdx >= 0) {
+      nextExams[existingIdx] = { ...nextExams[existingIdx], ...examPayload };
+    } else {
+      nextExams.push({
+        id: `EXM-${Date.now().toString().slice(-4)}`,
+        ...examPayload,
+      });
+    }
+    const updatedDb = { ...db, exams: nextExams };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/exams', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(examPayload),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleCollectFee = async (studentId, paymentPayload) => {
-    const res = await fetch(`/api/fees/${studentId}/pay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(paymentPayload),
-    });
-    const data = await res.json();
-    if (data.fees) {
-      setDb((prev) => ({ ...prev, fees: data.fees }));
+    const nextFees = [...(db.fees || [])];
+    let ledger = nextFees.find((f) => f.studentId === studentId);
+    if (!ledger) {
+      ledger = {
+        id: `FEE-${Date.now().toString().slice(-4)}`,
+        studentId,
+        academicYear: db.settings?.academicYear || '2026-2027',
+        totalAnnualFee: 84000,
+        discount: 0,
+        netPayable: 84000,
+        paidAmount: 0,
+        breakdown: {
+          tuitionFee: 56000,
+          labAndSmartClass: 12000,
+          transportFee: 12000,
+          libraryAndSports: 4000,
+        },
+        payments: [],
+      };
+      nextFees.push(ledger);
     }
-    return data;
+
+    if (typeof paymentPayload.discount === 'number') {
+      ledger.discount = paymentPayload.discount;
+      ledger.netPayable = Math.max(0, ledger.totalAnnualFee - ledger.discount);
+    }
+
+    const payAmount = Number(paymentPayload.amount) || 0;
+    const receipt = {
+      receiptNo: `RCP-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+      date: new Date().toISOString().split('T')[0],
+      amount: payAmount,
+      mode: paymentPayload.mode || 'UPI / Online',
+      transactionRef: paymentPayload.transactionRef || `TXN${Date.now().toString().slice(-8)}`,
+      installment: paymentPayload.installment || 'Installment Payment',
+      collectedBy: paymentPayload.collectedBy || 'Accounts Office',
+    };
+
+    ledger.payments = [receipt, ...(ledger.payments || [])];
+    ledger.paidAmount = ledger.payments.reduce(
+      (sum, p) => sum + Number(p.amount || 0),
+      0
+    );
+
+    const updatedDb = { ...db, fees: nextFees };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/fees/${studentId}/pay`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(paymentPayload),
+      }).catch(() => {});
+    } catch (e) {}
+
+    return { ledger, receipt, fees: nextFees };
   };
 
   const handleAddNotice = async (noticePayload) => {
-    const res = await fetch('/api/notices', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(noticePayload),
-    });
-    const notices = await res.json();
-    setDb((prev) => ({ ...prev, notices }));
+    const notice = {
+      id: `NOT-${Date.now().toString().slice(-4)}`,
+      title: noticePayload.title,
+      category: noticePayload.category || 'General',
+      date: noticePayload.date || new Date().toISOString().split('T')[0],
+      priority: noticePayload.priority || 'Medium',
+      audience: noticePayload.audience || 'All Students & Staff',
+      content: noticePayload.content || '',
+    };
+    const updatedDb = { ...db, notices: [notice, ...(db.notices || [])] };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/notices', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(noticePayload),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleDeleteNotice = async (id) => {
-    const res = await fetch(`/api/notices/${id}`, { method: 'DELETE' });
-    const notices = await res.json();
-    setDb((prev) => ({ ...prev, notices }));
+    const updatedDb = {
+      ...db,
+      notices: (db.notices || []).filter((n) => n.id !== id),
+    };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch(`/api/notices/${id}`, { method: 'DELETE' }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleUpdateSettings = async (newSettings) => {
-    const res = await fetch('/api/settings', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newSettings),
-    });
-    const settings = await res.json();
-    setDb((prev) => ({ ...prev, settings }));
+    const updatedDb = {
+      ...db,
+      settings: { ...db.settings, ...newSettings },
+    };
+    saveToStorageAndState(updatedDb);
+
+    try {
+      fetch('/api/settings', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newSettings),
+      }).catch(() => {});
+    } catch (e) {}
   };
 
   const handleResetDemo = async () => {
-    const res = await fetch('/api/reset', { method: 'POST' });
-    const fresh = await res.json();
-    setDb(fresh);
+    const fresh = JSON.parse(JSON.stringify(initialSeedData));
+    saveToStorageAndState(fresh);
+    try {
+      fetch('/api/reset', { method: 'POST' }).catch(() => {});
+    } catch (e) {}
   };
 
   const openIdStudioForPerson = (person) => {
@@ -201,13 +427,13 @@ export default function App() {
       id: 'students',
       label: 'Students',
       icon: GraduationCap,
-      count: db.students.length,
+      count: db.students?.length || 0,
     },
     {
       id: 'staff',
       label: 'Faculty & Staff',
       icon: Briefcase,
-      count: db.staff.length,
+      count: db.staff?.length || 0,
     },
     { id: 'attendance', label: 'Attendance', icon: CalendarCheck },
     { id: 'exams', label: 'Exams & Report Cards', icon: Award },
@@ -245,10 +471,17 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-emerald-400">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                Academic Year: {db.settings?.academicYear}
-              </span>
+              {isCloudMode ? (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-950 border border-indigo-700/60 text-xs font-semibold text-indigo-300">
+                  <Globe className="w-3.5 h-3.5 text-cyan-400" />
+                  GitHub Pages Mode (Live Persistent Storage)
+                </span>
+              ) : (
+                <span className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-emerald-400">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  Academic Year: {db.settings?.academicYear}
+                </span>
+              )}
 
               <button
                 type="button"
@@ -313,8 +546,8 @@ export default function App() {
 
         {activeTab === 'id-studio' && (
           <IdCardStudio
-            students={db.students}
-            staff={db.staff}
+            students={db.students || []}
+            staff={db.staff || []}
             settings={db.settings}
             onUpdateStudent={handleUpdateStudent}
             onUpdateStaff={handleUpdateStaff}
@@ -324,7 +557,7 @@ export default function App() {
 
         {activeTab === 'students' && (
           <StudentManagement
-            students={db.students}
+            students={db.students || []}
             settings={db.settings}
             onCreateStudent={handleCreateStudent}
             onUpdateStudent={handleUpdateStudent}
@@ -335,7 +568,7 @@ export default function App() {
 
         {activeTab === 'staff' && (
           <StaffManagement
-            staff={db.staff}
+            staff={db.staff || []}
             settings={db.settings}
             onCreateStaff={handleCreateStaff}
             onUpdateStaff={handleUpdateStaff}
@@ -346,16 +579,16 @@ export default function App() {
 
         {activeTab === 'attendance' && (
           <AttendanceModule
-            students={db.students}
-            attendance={db.attendance}
+            students={db.students || []}
+            attendance={db.attendance || []}
             onSaveAttendance={handleSaveAttendance}
           />
         )}
 
         {activeTab === 'exams' && (
           <ExamReportModule
-            students={db.students}
-            exams={db.exams}
+            students={db.students || []}
+            exams={db.exams || []}
             settings={db.settings}
             onSaveExam={handleSaveExam}
           />
@@ -363,8 +596,8 @@ export default function App() {
 
         {activeTab === 'fees' && (
           <FeeReceiptModule
-            students={db.students}
-            fees={db.fees}
+            students={db.students || []}
+            fees={db.fees || []}
             settings={db.settings}
             onCollectFee={handleCollectFee}
           />
@@ -372,8 +605,8 @@ export default function App() {
 
         {activeTab === 'timetable' && (
           <TimetableNoticesModule
-            timetable={db.timetable}
-            notices={db.notices}
+            timetable={db.timetable || []}
+            notices={db.notices || []}
             settings={db.settings}
             onAddNotice={handleAddNotice}
             onDeleteNotice={handleDeleteNotice}

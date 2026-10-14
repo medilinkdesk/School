@@ -15,6 +15,7 @@ function expressApiPlugin() {
 }
 
 export default defineConfig({
+  base: './', // Ensures assets load correctly on GitHub Pages (https://<username>.github.io/<repo>/)
   plugins: [react(), expressApiPlugin()],
   server: {
     port: 3000,
